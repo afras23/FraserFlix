@@ -1,0 +1,181 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cdb4db;
+}
+
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+.header-logo {
+  width: 150px;
+  padding-top: 10px;
+}
+
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-section {
+  position: relative;
+  height: 440px;
+  
+}
+
+.video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.main-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7.8rem;
+  background-image: linear-gradient(180deg, transparent, #ffafcc, #ffc8dd);
+}
+
+.main-content {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  z-index: 100;
+}
+.main-content img {
+  width: 500px;
+}
+
+.main-content div {
+  margin-top: 10px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  opacity: 0.9;
+}
+
+.btn-white {
+  color: #6a0572;
+  background-color: #ffc8dd;
+}
+
+.btn-grey {
+  background-color: #bde0fe;
+  color: #1a1a1a;
+}
+
+.btn .ico {
+  font-size: 10px;
+  margin-right: 5px;
+  outline: none;
+}
+
+.row-section {
+  position: relative;
+  z-index: 1000;
+  margin-top: -60px;
+  padding: 0px 50px;
+}
+
+.ant-card-body {
+  display: none;
+  position: absolute !important;
+  top: 200px;
+  background-color: #ffc8dd;
+  width: 101% !important;
+}
+
+.ant-card-meta-description {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  word-wrap: break-word !important;
+}
+
+.ant-card-actions {
+  display: none !important;
+}
+
+.ant-card {
+  transition: 0.3s linear;
+  background-color: #a2d2ff;
+  border-radius: 0 !important;
+}
+
+.ant-card:hover{
+  transform: scaleX(1.4) scaleY(1.4);
+  z-index: 10;
+}
+
+.ant-card:hover > .ant-card-body {
+  display: block;
+}
+
+.ant-card:hover > .ant-card-actions {
+  display: list-item !important;
+}
+
+.card-review {
+  font-size: 9px !important;
+}
+
+.edit {
+  color: #6a0572;
+  font-size: 40px;
+}
+
+.edit:hover {
+  color: #5c5470
+}
+.delete {
+  color: #ffafcc;
+  font-size: 40px;
+}
+.delete:hover {
+  color: #f783ac;
+}
+/* all Responsives code */
+
+@media(max-width: 600px) {
+    .header-logo {
+      width: 43px;
+    }
+}
+
+.loader {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.m-b-10 {
+  margin-top: 10px;
+}
+
+.video {
+  filter: brightness(0.8);
+}
